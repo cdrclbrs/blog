@@ -19,8 +19,7 @@ twitter: leubfish
 
 author:
   name:           'LBRS Cdrc'
-  url:            https://fr.gravatar.com/userimage/191316321/b1ece9b7c5cd093a314f491dbb7b49f0.png?size=200
-  logo:           https://fr.gravatar.com/userimage/191316321/b1ece9b7c5cd093a314f491dbb7b49f0.png?size=200
+
 paginate:         2
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
