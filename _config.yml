@@ -13,6 +13,9 @@ url:              https://blog.lbrs.io/
                   # If you want to move just the blog index pages but keep
                   # other pages at root, see the paginate_path and
                   # sidebar_blog_link below.
+email: cdrc@lbrs.io
+phone: '+33560762'
+
 
 author:
   name:           'LBRS Cdrc'
