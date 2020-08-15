@@ -4,7 +4,6 @@ highlighter:      rouge
 
 # Setup
 title:            lbrs.io
-logo:             https://fr.gravatar.com/userimage/191316321/b1ece9b7c5cd093a314f491dbb7b49f0.png?size=200
 tagline:          'The quieter you become, the more you are able to hear'
 description:      'The <a href="">quieter you become</a>, the more you are able to hear'
 url:              https://blog.lbrs.io/
@@ -18,7 +17,7 @@ url:              https://blog.lbrs.io/
 author:
   name:           'LBRS Cdrc'
   url:            https://twitter.com/blackcat
-
+  logo:           https://fr.gravatar.com/userimage/191316321/b1ece9b7c5cd093a314f491dbb7b49f0.png?size=200
 paginate:         2
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
