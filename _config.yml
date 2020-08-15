@@ -21,6 +21,7 @@ author:
 paginate:         5
 # paginate_path:    '/page:num'
                     # Or '/blog/page:num' if you want to move your index pages
+logo :            http://0.gravatar.com/avatar/b19a458e1cb46facc417d7adc8e91d94
 
 plugins:
   - jekyll-feed
