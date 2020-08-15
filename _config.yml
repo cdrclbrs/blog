@@ -4,6 +4,7 @@ highlighter:      rouge
 
 # Setup
 title:            lbrs.io
+logo:             https://fr.gravatar.com/userimage/191316321/b1ece9b7c5cd093a314f491dbb7b49f0.png?size=200
 tagline:          'The quieter you become, the more you are able to hear'
 description:      'The <a href="">quieter you become</a>, the more you are able to hear'
 url:              https://blog.lbrs.io/
