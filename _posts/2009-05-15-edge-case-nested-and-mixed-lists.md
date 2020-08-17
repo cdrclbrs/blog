@@ -18,7 +18,9 @@ Nested and mixed lists are an interesting beast. It's a co**rner case to make su
 > [!WARNING]
 > Hello
 
-![](2020-08-17-11-37-48.png)
+![picture 1](../images/9aa96b7211bd2b50ef0216de71fb8ef9ee9521bfe75b2e9cc428e309186f2548.png)  
+
+
 
 > [!IMPORTANT]
 > this is dangerous
