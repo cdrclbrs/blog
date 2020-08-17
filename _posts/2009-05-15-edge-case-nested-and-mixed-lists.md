@@ -12,7 +12,16 @@ tags:
 last_modified_at: 2017-03-09T14:25:52-05:00
 ---
 
-Nested and mixed lists are an interesting beast. It's a corner case to make sure that lists within lists do not break the ordered list numbering order and list styles go deep enough.
+Nested and mixed lists are an interesting beast. It's a co**rner case to make sure that lists within lists do not break the ordered list numbering order and list styles go deep enough.**
+
+
+> [!WARNING]
+> Hello
+
+
+> [!IMPORTANT]
+> this is dangerous
+> 
 
 ## Ordered -- Unordered -- Ordered
 
