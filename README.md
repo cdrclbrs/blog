@@ -1,4 +1,4 @@
-<a href="blog.lbrs.io">blog.lbrs.io</a>
+
 
 # Hydeout
 
