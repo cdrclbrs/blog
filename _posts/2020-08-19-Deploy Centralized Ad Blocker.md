@@ -41,7 +41,19 @@ git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole
 cd "Pi-hole/automated install/"
 sudo bash basic-install.sh
 ```
- 
+Once installed, configure your router to disable DHCP and promote your pi-hole system as DHCP server OR just configure the DNS to set your Pi-Hole Ip addresse.
+
+Finally, you can just add those 2 magic lists:
+
+* https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+
+* https://mirror1.malwaredomains.com/files/justdomains
+
+
+You now have a strong DNSsinkhole system that catch all DNS queries.
+
+![pihole](../images/pihole1.png)
+
 
 
 
