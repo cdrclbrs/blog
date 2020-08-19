@@ -45,9 +45,9 @@ Once installed, configure your router to disable DHCP and promote your pi-hole s
 
 Finally, you can just add those 2 magic lists:
 
-* https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts
+* [StevenBlack/hosts](https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts)
 
-* https://mirror1.malwaredomains.com/files/justdomains
+* [malware list](https://mirror1.malwaredomains.com/files/justdomains)
 
 
 You now have a strong DNSsinkhole system that catch all DNS queries.
