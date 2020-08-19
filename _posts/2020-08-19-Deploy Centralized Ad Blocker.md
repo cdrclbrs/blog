@@ -52,7 +52,7 @@ Finally, you can just add those 2 magic lists:
 
 You now have a strong DNSsinkhole system that catch all DNS queries.
 
-![pihole](../images/pihole1.png)
+![pihole](/images/pihole1.png)
 
 
 
