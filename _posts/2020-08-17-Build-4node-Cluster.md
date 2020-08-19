@@ -1,6 +1,8 @@
 ---
 layout: post
 title: "Building a 4 node Pi Cluster"
+excerpt: "Building a 4 node RaspberryPi Cluster With Python"
+excerpt_separator: "<!--See the Video-->"
 categories:
   - system
 tags:
