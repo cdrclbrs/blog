@@ -34,7 +34,7 @@ The Pi-hole® is a [DNS sinkhole](https://en.wikipedia.org/wiki/DNS_sinkhole) th
 ```sh
 curl -sSL https://install.pi-hole.net | bash
 ```
-note: Piping bash can bless you, if you prefer to look at the code, here is the script to clone the Git repo:
+note: Piping bash can bother you, if you prefer to look at the code, here is the script to clone the Git repo:
 
 ```sh 
 git clone --depth 1 https://github.com/pi-hole/pi-hole.git Pi-hole
