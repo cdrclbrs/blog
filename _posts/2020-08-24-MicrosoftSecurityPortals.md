@@ -14,6 +14,8 @@ tags:
   - Security
 last_modified_at: 2020-08-23T10:23:48-05:00
 ---
+here is a short compilation list of the access portals of the Microsoft Security part for the Office365/Azure stack
+
 
 **Microsoft 365 compliance center**
 
@@ -86,4 +88,4 @@ Monitor and respond to security alerts on devices protected by next-generation p
 
 See and stop threats before they cause harm, with SIEM reinvented for a modern world. Azure Sentinel is your birds-eye view across the enterprise. Put the cloud and large-scale intelligence from decades of Microsoft security experience to work. Make your threat detection and response smarter and faster with artificial intelligence (AI). Eliminate security infrastructure setup and maintenance, and elastically scale to meet your security needs—while reducing IT costs.
 
-* [https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/MainMenuBlade/0/subscriptionId/0c0c4c6a-13a2-40b2-aeaf-72f790f4ddf5/resourceGroup/az-sentinel/workspaceName/brdrssentinel](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/MainMenuBlade/0/subscriptionId/0c0c4c6a-13a2-40b2-aeaf-72f790f4ddf5/resourceGroup/az-sentinel/workspaceName/brdrssentinel)
+* Navigate to Azure Portal Then to Sentinel
