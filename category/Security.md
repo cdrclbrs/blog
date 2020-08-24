@@ -3,9 +3,10 @@ layout: category
 title: Security
 ---
 
-{% for category in site.categories %}
-    <h3>{{ category | first }}</h3>
-    {% for post in page.categories.category %}
-      {{ post.title }}<br>
-    {% endfor %}            
-{% endfor %}
+<ul>
+  {% for post in site.categories.security %}
+    {% if post.url %}
+        <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+    {% endif %}
+  {% endfor %}
+</ul>
