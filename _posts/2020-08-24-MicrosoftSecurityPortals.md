@@ -1,5 +1,6 @@
 ---
 layout: post
+sidebar_link: true
 title: "List of all Microsoft Security Portals on o365/azure Subscrition"
 excerpt: "Understand all the tools that you have with you"
 excerpt_separator: "<!--more-->"
