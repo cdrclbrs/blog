@@ -3,12 +3,9 @@ layout: category
 title: Security
 ---
 
-{% assign pages_list = site.pages|sort:"sidebar_sort_order" %}
-{% for node in pages_list %}
-  {% if node.title != null %}
-    {% if node.layout == "category" %}
-      <a class="category-link {% if page.url == node.url %} active{% endif %}"
-          href="{{ node.url | relative_url }}">{{ node.title }}</a>  
-    {% endif %}
-  {% endif %}
+{% for category in site.categories %}
+    <h3>{{ category | first }}</h3>
+    {% for post in page.categories.category %}
+      {{ post.title }}<br>
+    {% endfor %}            
 {% endfor %}
