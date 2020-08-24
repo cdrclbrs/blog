@@ -5,9 +5,8 @@ sidebar_link: true
 ---
 
 <p class="message">
-  Hey there! This page is included as an example. Feel free to customize it
-  for your own use upon downloading. Carry on!
+Hey there! I'm a cloud enthusiast. 
+An adventurous dad, who loves sports, challenges, and computer security in all its variations. This blog Repo will help me to organize my discoveries through the web and my works. You can contact me on Discord, TG, by mail (pgp) in French, English or Spanish.
 </p>
 
-To make pages show up in the sidebar, add `sidebar_link: true` to the front
-matter.
+https://securitycongress.euskalhack.org/
