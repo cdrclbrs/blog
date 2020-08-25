@@ -2,7 +2,7 @@
 layout: category
 title: Security
 ---
-<img alt="Security Category" src="../images/security.jpg" width="100%" />
+<img alt="Security Category" src="../images/security.jpg" width="400px" />
 <h1>List of Security Posts</h1>
 <ul>
   {% for post in site.categories.security %}
