@@ -1,6 +1,5 @@
 ---
 layout: post
-sidebar_link: true
 title: "simple Guidelines to Prolong Lithium-ion Batteries"
 excerpt: "For a long time I wondered what the real physical properties were concerning batteries in general (laptop, cell phone etc...). I hear a lot of advice around me...Often old advice not always up to date..."
 excerpt_separator: "<!--read-->"
