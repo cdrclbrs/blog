@@ -15,7 +15,7 @@ For a long time I wondered what the real physical properties were concerning bat
 
 ***
 
-Here are simple Guidelines to Prolong Lithium-ion Batteries
+<p align="center">Here are simple Guidelines to Prolong Lithium-ion Batteries</p>
 
 ***
 
