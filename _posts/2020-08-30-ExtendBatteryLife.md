@@ -8,6 +8,7 @@ categories:
 tags:
   - hardware
   - battery
+  - tips
 last_modified_at: 2020-08-29T03:23:48-05:00
 ---
 For a long time I wondered what the real physical properties were concerning batteries in general (laptop, cell phone etc...). I hear a lot of advice around me...Often old advice not always up to date...We only rarely have Ni Cd (nickel cadmium) batteries. These batteries must often be completely discharged before recharging... The Li-Ion (Lithium-Ion ) are much more common and it is those which interest us:
