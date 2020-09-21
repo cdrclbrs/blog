@@ -11,25 +11,8 @@ last_modified_at: 2020-09-14T23:10:25-05:00
 
 Hi, this is a cheat sheet for subdomains enumeration. 
 
-
-
-<!--<style> h1 {color: rgb(255,29,85);}</style>-->
-<style>
-#markdown-toc {
-    border: 1px solid #aaa;
-    padding: 1.5em;
-    display: inline-block;
-}
-</style>
-<!--more-->
-
-## Table of contents
-{:.no_toc}
-
-* Will be replaced with the ToC, including the "Contents" Header (DO NOT REMOVE this line)
-{:toc}
-
 ## Why so many tools & techniques?
+
 - The more techniques used, the more chances to find interesting subdomains that **others might have missed**.
 - Some bug hunters recommend using only a handful of tools (like Amass, Massdns, Subfinder & Gobuster). But people who have a bad Internet connection & no VPS won't be able to use these highly effective & fast tools. So **choose whatever works for you**!
 
