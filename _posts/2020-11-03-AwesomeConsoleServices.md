@@ -36,7 +36,7 @@ A curated list of awesome console services (reachable via HTTP, HTTPS and other 
   - [Scripts](#Scripts "Scripts")
   - [Clients](#Clients "Clients")
 
-## IP address
+# IP address
 
 ### Inline
 
@@ -56,7 +56,7 @@ A curated list of awesome console services (reachable via HTTP, HTTPS and other 
 * `curl ipv4bot.whatismyipaddress.com`
 * `curl ipcalf.com`
 
-### New line
+## New line
 
 * `curl ipaddy.net`
 * `curl eth0.me`
@@ -97,14 +97,14 @@ A curated list of awesome console services (reachable via HTTP, HTTPS and other 
 * `curl gd.geobytes.com/GetCityDetails`
 * `curl ip.jsontest.com`
 
-## Geolocation
+# Geolocation
 
 * `curl ipinfo.io/8.8.8.8` or `curl ipinfo.io/8.8.8.8/loc`
 * `curl ip-api.com` or `curl ip-api.com/8.8.8.8`
 * `curl ifconfig.co/country` or `curl ifconfig.co/city` or `curl ifconfig.co/country-iso` or `http ifconfig.co/json`
 * `curl ifconfig.es/geo` or `curl ifconfig.es/json` or `curl ifconfig.es/country` or `curl ifconfig.es/code` or `curl ifconfig.es/city` or `curl ifconfig.es/latitude` or `curl ifconfig.es/longitude`
 
-## Text Sharing
+# Text Sharing
 
 * `echo "Hello world!" | curl -F 'f:1=<-' ix.io`
 * `echo "Hello world!" | curl -F file=@- 0x0.st`
@@ -114,23 +114,23 @@ A curated list of awesome console services (reachable via HTTP, HTTPS and other 
 * `echo "Hello world!" | curl -H "content-type: text/plain" -d @- https://textdb.dev/api/data/unique-id-for-my-text`
 * `curl https://patchbay.pub/your-custom-path -d "Hello world!"` and `curl -s https://patchbay.pub/your-custom-path`
 
-## URL shortener
+# URL shortener
 
 * `curl -s tinyurl.com/api-create.php?url=<link>`
 * `curl -F shorten=<link> https://ttm.sh`
 
-## File Transfer
+# File Transfer
 
 * `curl --upload-file <file> transfer.sh/<filename>`
 * `curl --upload-file <file> filepush.co/upload/<filename>`
 * `curl -F file=@<file> https://ttm.sh`
 * `curl https://patchbay.pub/your-custom-filepath.exe --data-binary @<file>` and `curl -LO https://patchbay.pub/your-custom-filepath.exe`
 
-## Browser
+# Browser
 
 *  :no_entry_sign: `ssh brow.sh`
 
-## Tools
+# Tools
 
 * `curl qrenco.de/STRING` or `echo STRING | curl -F-=\<- qrenco.de` — create QR-code for a string ([chubin/qrenco.de](https://github.com/chubin/qrenco.de))
 * `curl "http://c.docverter.com/convert" -F from=html -F to=pdf -F "input_files[]=@your-file-name.html" -o "output-file-name.pdf"` - convert a document ([source](https://github.com/docverter/docverter))
@@ -145,22 +145,22 @@ A curated list of awesome console services (reachable via HTTP, HTTPS and other 
 * `curl -s "https://api.hackertarget.com/whois/?q=google.com"` - Whois lookup
 * `curl -s "https://jsonplaceholder.typicode.com/users"` - Useful tool to retrieve fake api data
 
-## Cryptography
+# Cryptography
 
 * `curl https://ja3er.com/search/535886c8d0a1b14f02298967bb990171` - SSL fingerprint search
 
-## Monitoring
+# Monitoring
 
 * `curl ping.gg`
 
-## Weather
+# Weather
 
 * `curl wttr.in` or `curl wttr.in/Berlin` — the right way to check the weather
 * `finger oslo@graph.no`
 * `nc rainmaker.wunderground.com 3000` (also works with telnet)
 * `curl https://tgftp.nws.noaa.gov/data/observations/metar/stations/KAAO.TXT` - METAR from the specified ICAO
 
-## News
+# News
 
 * `curl getnews.tech/world+cup` — fetch the latest news
 * `gopher://gopher.leveck.us:70` - news aggregator
@@ -169,16 +169,16 @@ A curated list of awesome console services (reachable via HTTP, HTTPS and other 
 * `gopher://hngopher.com:70` - hacker news
 * :no_entry_sign: `curl wrk.ist` — fetch the latest remote jobs / gigs on the IT market
 
-## Information boards
+# Information boards
 
 * :no_entry_sign: `curl http://frcl.de/gulasch` — Gulaschprogrammiernacht 2019 Fahrplan
 * `gopher://gopherpedia.com:70` - wikipedia
 
-## Map
+# Map
 
 * `telnet mapscii.me` — show a zoomable world map
 
-## Money
+# Money
 
 * `curl rate.sx` — get cryptocurrencies exchange rates
 * :no_entry_sign: `curl moneroj.org` — get Monero exchange rate
@@ -186,18 +186,18 @@ A curated list of awesome console services (reachable via HTTP, HTTPS and other 
 * `nc ticker.bitcointicker.co 10080` — get BTC/USD exchange rate (also works with telnet)
 * `curl stonks.icu/amd/msft` get stock visualizer and tracker
 
-## Documentation
+# Documentation
 
 * `curl cheat.sh` — UNIX/Linux commands cheat sheets using curl ([chubin/cheat.sh](https://github.com/chubin/cheat.sh))
 * `curl 'api.hackertarget.com/subnetcalc/?q=192.168.1.0/24'` Subnet calculator
 * `gopher://telcodata.us:70` - NPA/NXX Lookup
 * `gopher://gopher.floodgap.com/1/world` - all known gopher servers
 
-## Dictionaries and translators
+# Dictionaries and translators
 
 * `curl 'dict.org/d:command line'`
 
-## Generators
+# Generators
 
 * `git commit -m "$(curl -sk whatthecommit.com/index.txt)"` —  generate random commit message
 * curl `"https://www.random.org/integers/?num=1&min=1&max=100&col=1&base=10&format=plain&rnd=new"` - generate random number
@@ -209,7 +209,7 @@ A curated list of awesome console services (reachable via HTTP, HTTPS and other 
 * `nc towel.blinkenlights.nl 666` - IT excuses (also works with telnet)
 * `curl -s 'https://api-inference.huggingface.co/models/distilgpt2' --data-raw '"what is the meaning of life?"' | jq '.[].generated_text'` - generate text using the GPT2 AI model from a seed string
 
-## Entertainment and Games
+# Entertainment and Games
 
 * `curl https://asciitv.fr` — watch Star Wars in terminal via curl ([source](https://github.com/martinraison/ascii-tv))
 * `nc towel.blinkenlights.nl 23` — watch Star Wars in terminal via netcat (also works with telnet)
@@ -258,13 +258,13 @@ Telnet/SSH-based games:
 * `telnet telehack.com`
 
 
-## Scripts
+# Scripts
 
 Useful scripts, that can be run with just one line of code, but where, still local execution is necessary.
 
 * `curl -s https://raw.githubusercontent.com/sivel/speedtest-cli/master/speedtest.py | python -`
 
-## Clients
+# Clients
 
 At least one of these clients, that you need to access these services, is installed on almost every UNIX/Linux system.
 
