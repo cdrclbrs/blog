@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Awesome Console Services - SuperFast!!"
+title: "CheatList of fast Console Services"
 excerpt: "Enjoy that awesome list of console services..."
 excerpt_separator: "<!--read-->"
 categories:
