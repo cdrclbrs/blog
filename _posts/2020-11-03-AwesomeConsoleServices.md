@@ -14,28 +14,6 @@ last_modified_at: 2020-11-03T03:22:48-05:00
 
 # awesome-console-services
 
-A curated list of awesome console services (reachable via HTTP, HTTPS and other network protocols).
-
-  - [IP Address](#IP-Address "IP Address")
-  - [Geolocation](#Geolocation "Geolocation")
-  - [Text Sharing](#Text-Sharing "Text Sharing")
-  - [URL Shortener](#URL-Shortener "URL Shortener")
-  - [File Transfer](#File-Transfer "File Transfer")
-  - [Browser](#Browser "Browser")
-  - [Tools](#Tools "Tools")
-  - [Monitoring](#Monitoring "Monitoring")
-  - [Weather](#Weather "Weather")
-  - [News](#News "News")
-  - [Information boards](#Information-boards "Information boards")
-  - [Map](#Map "Map")
-  - [Money](#Money "Exchange rates and financial information")
-  - [Documentation](#Documentation "Manuals, cheat sheets and FAQs")
-  - [Dictionaries and translators](#Dictionaries-and-translators "Dictionaries and translators")
-  - [Generators](#Humour "Messages/texts/jokes/fortunes/names generators")
-  - [Entertainment](#Entertainment "Chats, games and fun")
-  - [Scripts](#Scripts "Scripts")
-  - [Clients](#Clients "Clients")
-
 # IP address
 
 ### Inline
