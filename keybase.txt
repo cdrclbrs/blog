@@ -1,0 +1,56 @@
+==================================================================
+https://keybase.io/lbrs
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://blog.lbrs.io
+  * I am lbrs (https://keybase.io/lbrs) on keybase.
+  * I have a public key ASBXgY8gUO6wH5vlZHsewb7cLTPW4ER6FDDueo_cVB3fmgo
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "01207ede287e8a150eba7ccddb44634ea5d0110f7454d32a4b9a2c88f5b75adea3560a",
+      "host": "keybase.io",
+      "kid": "012057818f2050eeb01f9be5647b1ec1bedc2d33d6e0447a1430ee7a8fdc541ddf9a0a",
+      "uid": "ee9e499861cfb54b46d6aa02eaeb9819",
+      "username": "lbrs"
+    },
+    "merkle_root": {
+      "ctime": 1605122181,
+      "hash": "6bf3a097041b529b9d9f4b6ff52004a792e388fc4c2ca563c38c1947631fa604e2abffa146543af33683c13e79e7fff9afbac256d36a4460ef437e3197ecd2b2",
+      "hash_meta": "4c46c2992956fdcb8a240a4da7bb6d25cb20b38787210a6ae1277b9ca04ea23a",
+      "seqno": 18093778
+    },
+    "service": {
+      "entropy": "ZJI0B2XJWQuu6XOhwEwXtYYK",
+      "hostname": "blog.lbrs.io",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 2
+  },
+  "client": {
+    "name": "keybase.io go client",
+    "version": "5.5.0"
+  },
+  "ctime": 1605122230,
+  "expire_in": 504576000,
+  "prev": "4e3f8a7139f68c70c7f84b085633b33289e167b4634e65b9a4b3c41267b88b5f",
+  "seqno": 7,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+hKRib2R5hqhkZXRhY2hlZMOpaGFzaF90eXBlCqNrZXnEIwEgV4GPIFDusB+b5WR7HsG+3C0z1uBEehQw7nqP3FQd35oKp3BheWxvYWTESpcCB8QgTj+KcTn2jHDH+EsIVjOzMonhZ7RjTmW5pLPEEme4i1/EIPdhq6jrKiK4FSyXzx70ws9aXQLr/Sv3PO78Ut4sULKzAgHCo3NpZ8RALrrObdX/y3Vb4JgLPaaZOotVO+HNm1rGuA6cPkSg5EhXGyuLB4UiMTZTzJLgpWEXi0BokqJTj6JZpr9c9QefCahzaWdfdHlwZSCkaGFzaIKkdHlwZQildmFsdWXEIAdh1sPwx8IYtWnlpdNmfGF5H/jNoFyDpLnuejcm2gjVo3RhZ80CAqd2ZXJzaW9uAQ==
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/lbrs
+
+==================================================================
