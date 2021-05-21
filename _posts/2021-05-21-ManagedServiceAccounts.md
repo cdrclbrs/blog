@@ -61,11 +61,11 @@ To be able to create gMSA accounts on Active Directory infrastructure, the Key D
 It is possible to delay the activation of the generated key by using the -EffectiveTime parameter followed by a date. If we use the -EffectiveImmediately parameter the key will be usable 10 hours after its creation (default behavior) in order to ensure that it is replicated between the different DCs.
 
 Here is the command to execute:
-```
+```powershell
 Add-KdsRootKey -EffectiveImmediately
 ```
 As part of a lab, if you want to be able to use the KDS key now without having to wait 10 hours, it is possible to cheat by using this command:
-```
+```powershell
 Add-KdsRootKey -EffectiveTime ((Get-Date).AddHours(-10))
 ```
 
@@ -75,7 +75,7 @@ The created key is identifiable with a Guid.
 
 The key can be displayed simply by running the command below:
 
-```
+```powershell
 Get-KdsRootKey
 ```
 
@@ -103,7 +103,7 @@ Then browse this way: Services > Group Key Distribution Service > Master Root Ke
 To create a gMSA on your Active Directory domain, we will use the *New-ADServiceAccount* cmdlet and different parameters. 
 Here is the command to execute to create and activate a gMSA named "sa_cegidWebServices" with a password that renews itself every 30 days. The computer account "LBRSSRV01$" will be allowed to use this gMSA.
 
-```
+```powershell
 New-ADServiceAccount -Name "sa_cegidWeb" 
                      Description "sa for cegid Web Services Farm"
                      -DNSHostName "sa_cegidWeb.lbrs.lab" 
@@ -114,10 +114,10 @@ New-ADServiceAccount -Name "sa_cegidWeb"
 
 Some explanations of the parameters:
 
-**ManagedPasswordIntervalInDays**:
+**`ManagedPasswordIntervalInDays`**:
 is used to indicate that the password should be reset every X days. This action is automatic and does not require any maintenance action. This attribute is to be defined when creating the gMSA, then it is <u>read only</u>.
  
-**PrincipalsAllowedToRetrieveManagedPassword** : is used to indicate the object which will be able to use this gMSA and will write the attribute *msDS-GroupMSAMembership* to the gMSA object. Of course, it is possible to authorize other objects afterwards since a gMSA can be used by several hosts.
+**`PrincipalsAllowedToRetrieveManagedPassword`** : is used to indicate the object which will be able to use this gMSA and will write the attribute *msDS-GroupMSAMembership* to the gMSA object. Of course, it is possible to authorize other objects afterwards since a gMSA can be used by several hosts.
 
 **DNSHostName**: DNS name of this gMSA object
 
@@ -155,3 +155,7 @@ remember: AD is the master, if the account is destroyed, the service no longer w
 ![IISConfig](https://blog.lbrs.io/images/WebIIS.png)
 
 ![sched](https://blog.lbrs.io/images/sched.png)
+
+And you can also use it in the services
+
+![ryuk service](https://blog.lbrs.io/images/ryuk.png)
