@@ -64,31 +64,26 @@ The created key is identifiable with a Guid.
 ![kds](https://blog.lbrs.io/images/gmsa1.png)
 
 The key can be displayed simply by running the command below:
-
+```
 Get-KdsRootKey
-
+```
 This returns a result in this form:
-```
-AttributeOfWrongFormat:
-KeyValue : {174, 194, 208, 151...}
-EffectiveTime : 16/04/2020 18:43:58
-CreationTime : 16/04/2020 18:43:58
-IsFormatValid : True
-DomainController : CN=SRV-ADDS-01,OU=Domain Controllers,DC=IT-CONNECT,DC=LOCAL
-ServerConfiguration : Microsoft.KeyDistributionService.Cmdlets.KdsServerConfiguration
-KeyId: 907a7443-1e9e-4026-b06b-03ae9adf9ce6
-VersionNumber : 1
-```
+
+![kdsresult](https://blog.lbrs.io/images/gmsa2.png)
+
 If you want to check the validity of a root key, the Test-KdsRootKey cmdlet can be used. You just have to specify the Guid of the key to check. For example:
 
-Test-KdsRootKey -KeyId 907a7443-1e9e-4026-b06b-03ae9adf9ce6
+![testkds](https://blog.lbrs.io/images/testkds.png)
 
 If the key is valid, the value true will be returned in the console.
 
 The Kds keys are visible in the "Active Directory Sites and Services" console, by enabling the "Show Services Node" option in the "View" menu.
 
+![servicenodes](https://blog.lbrs.io/images/servicenodes.png)
+
 Then browse this way: Services > Group Key Distribution Service > Master Root Keys
+
+![masterrootkey](https://blog.lbrs.io/images/masterrootkey.png)
 
 Now that this prerequisite is met, we can move on to the next step.
 
-Translated with www.DeepL.com/Translator (free version)
