@@ -20,6 +20,7 @@ Table of Contents
 - [Create a gMSA](#create-a-gmsa)
 - [create the gMSA account](#create-the-gmsa-account)
 - [Add the gMSA to the server](#add-the-gmsa-to-the-server)
+- [Configure The services](#configure-the-services)
 
 
 # Presentation
@@ -97,11 +98,11 @@ To create a gMSA on your Active Directory domain, we will use the *New-ADService
 Here is the command to execute to create and activate a gMSA named "sa_cegidWebServices" with a password that renews itself every 30 days. The computer account "LBRSSRV01$" will be allowed to use this gMSA.
 
 ```
-New-ADServiceAccount -Name "sa_cegidWebSvc" 
+New-ADServiceAccount -Name "sa_cegidWeb" 
                      Description "sa for cegid Web Services Farm"
-                     -DNSHostName "sa_cegidWebSrv.lbrs.lab" 
+                     -DNSHostName "sa_cegidWeb.lbrs.lab" 
                      -ManagedPasswordIntervalInDays 30 
-                     -PrincipalsAllowedToRetrieveManagedPassword "LBRSSRV01$" 
+                     -PrincipalsAllowedToRetrieveManagedPassword "GG_CEGID_SERVERS" 
                      -Enabled $True
 ```
 
@@ -139,8 +140,11 @@ Test-ADServiceAccount sa_cegidWeb
 
 ![installserviceaccount](https://blog.lbrs.io/images/installserviceaccount.png)
 
-Now you can configure your service with the gMSA Account.
-AD is the master, if the account is destroyed, the service no longer works.
+
+# Configure The services
+
+Now you can configure your Web service or schedule tasks with the gMSA Account.
+remember: AD is the master, if the account is destroyed, the service no longer works.
 
 ![IISConfig](https://blog.lbrs.io/images/WebIIS.png)
 
