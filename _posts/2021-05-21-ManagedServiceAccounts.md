@@ -114,18 +114,11 @@ is used to indicate that the password should be reset every X days. This action 
 
 **DNSHostName**: DNS name of this gMSA object
 
-![ServiceAccount](https://blog.lbrs.io/images/serviceaccount.png)
+![newsserviceaccount](https://blog.lbrs.io/images/newsserviceaccount.png)
 
-When the gMSA is created, we can find it in the Active Directory within the "Managed Service Account" container:
+When the gMSA is created, we can find it in the Active Directory within the "Managed Service Account" container by default or in our specified OU:
 
 ![saview](https://blog.lbrs.io/images/saview.png)
-
-Now that the gMSA object has been created, we need to add this service account to the computer object to associate it. 
-For this action, the cmdlet to use is *Add-ADComputerServiceAccount*, with two parameters: *-Identity* for the server name and *-ServiceAccount* for the name or services to link.
-
-![Addcomputer](https://blog.lbrs.io/images/Addcomputer.png)
-
-![attributes](https://blog.lbrs.io/images/attributes.png)
 
 
 # Add the gMSA to the server
@@ -138,3 +131,10 @@ Add-WindowsFeature RSAT-AD-PowerShell
 
 ![rsat](https://blog.lbrs.io/images/rsat.png)
 
+Then we Install the account and we can test it
+```
+Install-ADServiceAccount -Identity sa_cegidWeb
+Test-ADServiceAccount sa_cegidWeb
+```
+
+![installserviceaccount](https://blog.lbrs.io/images/installserviceaccount.png)
