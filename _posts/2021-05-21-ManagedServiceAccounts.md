@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "How to use Group Manaed Service Accounts (gMSA)"
+title: "How to use Group Managed Service Accounts (gMSA)"
 excerpt: "gMSA deployement and usage"
 excerpt_separator: "<!--read-->"
 categories:
-  - tips
+  - Security
 tags:
   - active Directory
   - AD
