@@ -30,8 +30,6 @@ Generally it is too often accounts of services concerned by forgotten passwords,
 Remember that just because you use gMSA doesn't mean you can stop being vigilant about AD perms:
 If one can compromise an account with rights to the servers OU, or delegated administrative rights via GPO restricted groups or similar, or have the ability to modify a GPO that is linked to that OU, one can get administrative rights to the server.([Mimikatz against gMSA](https://adsecurity.org/?p=4367))
 
-A good other technique is to implement Tiering.
-
 
 # Presentation
 
@@ -56,9 +54,9 @@ In terms of compatibility, gMSA accounts work with different types of applicatio
 
 # Create a gMSA
 
-To be able to create gMSA accounts on Active Directory infrastructure, the Key Distribution Service must be running and a root key must be generated. To create a key from the domain controller, we will use PowerShell and the Add-KdsRootKey cmdlet.
+To be able to create gMSA accounts on Active Directory infrastructure, the Key Distribution Service must be running and a `root key` must be generated. To create a key from the domain controller, we will use PowerShell and the `Add-KdsRootKey` cmdlet.
 
-It is possible to delay the activation of the generated key by using the -EffectiveTime parameter followed by a date. If we use the -EffectiveImmediately parameter the key will be usable 10 hours after its creation (default behavior) in order to ensure that it is replicated between the different DCs.
+It is possible to delay the activation of the generated key by using the -EffectiveTime parameter followed by a date. If we use the `-EffectiveImmediately` parameter the key will be usable 10 hours after its creation (default behavior) in order to ensure that it is replicated between the different DCs.
 
 Here is the command to execute:
 ```powershell
@@ -91,17 +89,22 @@ If the key is valid, the value true will be returned in the console.
 
 The Kds keys are visible in the "Active Directory Sites and Services" console, by enabling the "Show Services Node" option in the "View" menu.
 
-![servicenodes](https://blog.lbrs.io/images/servicenodes.png)
+![servicenodes](https://blog.lbrs.io/images/servicesnodes.png)
 
-Then browse this way: Services > Group Key Distribution Service > Master Root Keys
+Then browse this way: <i>Services > Group Key Distribution Service > Master Root Keys</i>
 
 ![masterrootkey](https://blog.lbrs.io/images/masterrootkey.png)
 
 
 # create the gMSA account
 
-To create a gMSA on your Active Directory domain, we will use the *New-ADServiceAccount* cmdlet and different parameters. 
-Here is the command to execute to create and activate a gMSA named "sa_cegidWebServices" with a password that renews itself every 30 days. The computer account "LBRSSRV01$" will be allowed to use this gMSA.
+To create a gMSA on your Active Directory domain, we will use the `New-ADServiceAccount` cmdlet and different parameters. 
+
+Let's imagine that we have a farm of Web servers to manage.
+We have a Global Security Group (GG) than contain all our Web Servers.
+Here is the command to execute to create and activate a gMSA named "sa_cegidWeb" with a password that renews itself every 30 days. 
+
+The computer account "LBRSSRV01$" will be allowed to use this gMSA.
 
 ```powershell
 New-ADServiceAccount -Name "sa_cegidWeb" 
@@ -112,7 +115,7 @@ New-ADServiceAccount -Name "sa_cegidWeb"
                      -Enabled $True
 ```
 
-Some explanations of the parameters:
+<u>Some explanations of the parameters</u>:
 
 **`ManagedPasswordIntervalInDays`**:
 is used to indicate that the password should be reset every X days. This action is automatic and does not require any maintenance action. This attribute is to be defined when creating the gMSA, then it is <u>read only</u>.
@@ -159,3 +162,7 @@ remember: AD is the master, if the account is destroyed, the service no longer w
 And you can also use it in the services
 
 ![ryuk service](https://blog.lbrs.io/images/ryuk.png)
+
+Some will see the little wink on the screenshot &#x1F480;
+
+Voilà, you now are ready to deploy gMSA !
