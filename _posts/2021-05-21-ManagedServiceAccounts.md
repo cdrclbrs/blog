@@ -138,3 +138,9 @@ Test-ADServiceAccount sa_cegidWeb
 ```
 
 ![installserviceaccount](https://blog.lbrs.io/images/installserviceaccount.png)
+
+Now you can configure your service with the gMSA Account.
+AD is the master, if the account is destroyed, the service no longer works.
+
+![IISConfig](https://blog.lbrs.io/images/WebIIS.png)
+
