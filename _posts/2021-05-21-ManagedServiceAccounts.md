@@ -112,4 +112,5 @@ Some explanations of the parameters:
 
  **DNSHostName**: DNS name of this gMSA object
 
- 
+ ![ServiceAccount](https://blog.lbrs.io/images/serviceaccount.png)
+
