@@ -18,6 +18,7 @@ Table of Contents
 - [Table of Contents](#table-of-contents)
 - [Presentation](#presentation)
 - [Create a gMSA](#create-a-gmsa)
+- [create the gMSA account](#create-the-gmsa-account)
 
 
 # Presentation
@@ -59,14 +60,17 @@ As part of a lab, if you want to be able to use the KDS key now without having t
 ```
 Add-KdsRootKey -EffectiveTime ((Get-Date).AddHours(-10))
 ```
+
 The created key is identifiable with a Guid.
 
 ![kds](https://blog.lbrs.io/images/gmsa1.png)
 
 The key can be displayed simply by running the command below:
+
 ```
 Get-KdsRootKey
 ```
+
 This returns a result in this form:
 
 ![kdsresult](https://blog.lbrs.io/images/gmsa2.png)
@@ -85,5 +89,27 @@ Then browse this way: Services > Group Key Distribution Service > Master Root Ke
 
 ![masterrootkey](https://blog.lbrs.io/images/masterrootkey.png)
 
-Now that this prerequisite is met, we can move on to the next step.
 
+# create the gMSA account
+
+To create a gMSA on your Active Directory domain, we will use the *New-ADServiceAccount* cmdlet and different parameters. 
+Here is the command to execute to create and activate a gMSA named "sa_cegidWebServices" with a password that renews itself every 30 days. The computer account "LBRSWKS01$" will be allowed to use this gMSA.
+
+```
+New-ADServiceAccount -Name "sa_cegidWebSrv" 
+                     Description "sa for cegid Web Services Farm"
+                     -DNSHostName "sa_cegidWebSrv.lbrs.lab" 
+                     -ManagedPasswordIntervalInDays 30 
+                     -PrincipalsAllowedToRetrieveManagedPassword "LBRSWKS01$" 
+                     -Enabled $True
+```
+
+Some explanations of the parameters:
+
+ **ManagedPasswordIntervalInDays**: is used to indicate that the password should be reset every X days. This action is automatic and does not require any maintenance action. This attribute is to be defined when creating the gMSA, then it is <u>read only</u>.
+ 
+ **PrincipalsAllowedToRetrieveManagedPassword** : is used to indicate the object which will be able to use this gMSA and will write the attribute *msDS-GroupMSAMembership* to the gMSA object. Of course, it is possible to authorize other objects afterwards since a gMSA can be used by several hosts.
+
+ **DNSHostName**: DNS name of this gMSA object
+
+ 
