@@ -94,14 +94,14 @@ Then browse this way: Services > Group Key Distribution Service > Master Root Ke
 # create the gMSA account
 
 To create a gMSA on your Active Directory domain, we will use the *New-ADServiceAccount* cmdlet and different parameters. 
-Here is the command to execute to create and activate a gMSA named "sa_cegidWebServices" with a password that renews itself every 30 days. The computer account "LBRSWKS01$" will be allowed to use this gMSA.
+Here is the command to execute to create and activate a gMSA named "sa_cegidWebServices" with a password that renews itself every 30 days. The computer account "LBRSSRV01$" will be allowed to use this gMSA.
 
 ```
-New-ADServiceAccount -Name "sa_cegidWebSrv" 
+New-ADServiceAccount -Name "sa_cegidWebSvc" 
                      Description "sa for cegid Web Services Farm"
                      -DNSHostName "sa_cegidWebSrv.lbrs.lab" 
                      -ManagedPasswordIntervalInDays 30 
-                     -PrincipalsAllowedToRetrieveManagedPassword "LBRSWKS01$" 
+                     -PrincipalsAllowedToRetrieveManagedPassword "LBRSSRV01$" 
                      -Enabled $True
 ```
 
@@ -135,4 +135,6 @@ To be used on a server, the gMSA must be installed on this server using a cmdlet
 ```
 Add-WindowsFeature RSAT-AD-PowerShell
 ```
+
+![rsat](https://blog.lbrs.io/images/rsat.png)
 
