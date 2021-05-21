@@ -27,18 +27,14 @@ Table of Contents
 
 
 - The same gMSA can be used on several servers
-
 - gMSAs are stored in the "Managed Service Account" container in the Active Directory
-
 - A gMSA can only be used on Windows Server 2012 and later
-
 - Requires the use of Microsoft Key Distribution Service (kdssvc.dll) for automatic password management and account creation
-
 - a gMSA is similar to a security group in which we will associate computer objects that will be allowed to use this secure service account
-
 - The password is managed by the Active Directory, it is very very complex and nobody knows it
 
-With an MSA or gMSA account, the password management is automatic by the Active Directory itself, unlike the use of a classic user account, which can be used for a service but for which you must manage the password renewal yourself. Very often, as it is time-consuming, the passwords of these accounts are not renewed by the administrators. That's why it's useful to rely on the gMSA solution, which also offers increased security for credentials.
+With an MSA or gMSA account, the password management is automatic by the Active Directory itself, unlike the use of a classic user account, which can be used for a service but for which you must manage the password renewal yourself. 
+Very often, as it is time-consuming, the passwords of these accounts are not renewed by the admins &#x1F62D; . That's why it's useful to rely on the gMSA solution, which also offers increased security for credentials.&#x1F3C6;&#x1F3C6;&#x1F3C6;
 
 An MSA account can be associated to only one server, unlike gMSA, which is restrictive when you need to use a service account on a service that is redundant between several servers.
 
@@ -143,8 +139,9 @@ Test-ADServiceAccount sa_cegidWeb
 
 # Configure The services
 
-Now you can configure your Web service or schedule tasks with the gMSA Account.
+Now you can configure your Web service or scheduled tasks with the gMSA Account.
 remember: AD is the master, if the account is destroyed, the service no longer works.
 
 ![IISConfig](https://blog.lbrs.io/images/WebIIS.png)
 
+![sched](https://blog.lbrs.io/images/sched.png)
