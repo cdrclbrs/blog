@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "How to use Group Managed Service Accounts (gMSA)"
-excerpt: "gMSA deployement and usage"
+excerpt: "Generally it is too often accounts of services concerned by forgotten passwords, shares in YOLO mode &#x1F918; to all the group of admins of the planet, with obviously big privileges, little segmentation and a change of password every 10 years&#x1F62C;"
 excerpt_separator: "<!--read-->"
 categories:
   - Security
@@ -21,6 +21,16 @@ Table of Contents
 - [create the gMSA account](#create-the-gmsa-account)
 - [Add the gMSA to the server](#add-the-gmsa-to-the-server)
 - [Configure The services](#configure-the-services)
+
+
+The use of gMSA is an excellent way to properly secure your AD. 
+
+Generally it is too often accounts of services concerned by forgotten passwords, shares in YOLO mode &#x1F918; to all the group of admins of the planet, with obviously big privileges, little segmentation and a change of password every 10 years&#x1F62C;
+
+Remember that just because you use gMSA doesn't mean you can stop being vigilant about AD perms:
+If one can compromise an account with rights to the servers OU, or delegated administrative rights via GPO restricted groups or similar, or have the ability to modify a GPO that is linked to that OU, one can get administrative rights to the server.([Mimikatz against gMSA](https://adsecurity.org/?p=4367))
+
+A good other technique is to implement Tiering.
 
 
 # Presentation
