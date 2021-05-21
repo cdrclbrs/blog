@@ -157,6 +157,14 @@ remember: AD is the master, if the account is destroyed, the service no longer w
 
 ![IISConfig](https://blog.lbrs.io/images/WebIIS.png)
 
+For a Scheduled Task, you'll need to use Powershell to create the Task:
+
+```powershell
+$action = New-ScheduledTaskAction "calc.exe" -WorkingDirectory "C:\Windows\system32\"
+$triger = New-ScheduledTaskTrigger -at 09:00 -Daily
+$Account = New-ScheduledTaskPrincipal -UserId lbrs.lab\sa_cegidWeb$ -LogonType Password -RunLevel Highest
+Register-ScheduledTask MyCalculator -Action $action -Trigger $triger -Principal $Account
+```
 ![sched](https://blog.lbrs.io/images/sched.png)
 
 And you can also use it in the services
