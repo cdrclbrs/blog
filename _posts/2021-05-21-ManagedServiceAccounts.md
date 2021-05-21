@@ -19,6 +19,7 @@ Table of Contents
 - [Presentation](#presentation)
 - [Create a gMSA](#create-a-gmsa)
 - [create the gMSA account](#create-the-gmsa-account)
+- [Add the gMSA to the server](#add-the-gmsa-to-the-server)
 
 
 # Presentation
@@ -106,11 +107,32 @@ New-ADServiceAccount -Name "sa_cegidWebSrv"
 
 Some explanations of the parameters:
 
- **ManagedPasswordIntervalInDays**: is used to indicate that the password should be reset every X days. This action is automatic and does not require any maintenance action. This attribute is to be defined when creating the gMSA, then it is <u>read only</u>.
+**ManagedPasswordIntervalInDays**:
+is used to indicate that the password should be reset every X days. This action is automatic and does not require any maintenance action. This attribute is to be defined when creating the gMSA, then it is <u>read only</u>.
  
- **PrincipalsAllowedToRetrieveManagedPassword** : is used to indicate the object which will be able to use this gMSA and will write the attribute *msDS-GroupMSAMembership* to the gMSA object. Of course, it is possible to authorize other objects afterwards since a gMSA can be used by several hosts.
+**PrincipalsAllowedToRetrieveManagedPassword** : is used to indicate the object which will be able to use this gMSA and will write the attribute *msDS-GroupMSAMembership* to the gMSA object. Of course, it is possible to authorize other objects afterwards since a gMSA can be used by several hosts.
 
- **DNSHostName**: DNS name of this gMSA object
+**DNSHostName**: DNS name of this gMSA object
 
- ![ServiceAccount](https://blog.lbrs.io/images/serviceaccount.png)
+![ServiceAccount](https://blog.lbrs.io/images/serviceaccount.png)
+
+When the gMSA is created, we can find it in the Active Directory within the "Managed Service Account" container:
+
+![saview](https://blog.lbrs.io/images/saview.png)
+
+Now that the gMSA object has been created, we need to add this service account to the computer object to associate it. 
+For this action, the cmdlet to use is *Add-ADComputerServiceAccount*, with two parameters: *-Identity* for the server name and *-ServiceAccount* for the name or services to link.
+
+![Addcomputer](https://blog.lbrs.io/images/Addcomputer.png)
+
+![attributes](https://blog.lbrs.io/images/attributes.png)
+
+
+# Add the gMSA to the server
+
+To be used on a server, the gMSA must be installed on this server using a cmdlet that is integrated with the PowerShell module "ActiveDirectory". 
+(If you are working on a server that is not a domain controller, you must install this module.) This is simply done with the following command: 
+```
+Add-WindowsFeature RSAT-AD-PowerShell
+```
 
