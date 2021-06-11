@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "GDPR email template - Francais"
 excerpt: "GDPR email template - French;"
 excerpt_separator: "<!--read-->"
