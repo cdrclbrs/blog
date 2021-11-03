@@ -8,9 +8,8 @@ tags:
   - active Directory
   - AD
   - Security
-last_modified_at: 2021-11-03T03:22:48-05:00
+last_modified_at: 2021-11-03T11:12:48-04:00
 ---
-
 # Active Directory Kill Chain Attack & Defense
 
 <img width="650" src="https://camo.githubusercontent.com/9547d8152e3490a6e5e3da0279faab64340885be/68747470733a2f2f646f63732e6d6963726f736f66742e636f6d2f656e2d75732f616476616e6365642d7468726561742d616e616c79746963732f6d656469612f61747461636b2d6b696c6c2d636861696e2d736d616c6c2e6a7067">
