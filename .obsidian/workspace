@@ -89,14 +89,14 @@
   "active": "9836b426504a8966",
   "lastOpenFiles": [
     "_posts/2021-11-03-ADKillChainAttacks.md",
+    "_posts/2020-08-30-ExtendBatteryLife.md",
+    "_posts/2020-11-03-AwesomeConsoleServices.md",
+    "_posts/2021-05-21-ManagedServiceAccounts.md",
     "_posts/2020-08-19-Jump-on-DoH.md",
     "_posts/2020-08-12-GoogleDorks.md",
     "_posts/2017-06-01-hello-hydeout.md",
-    "_posts/2020-11-03-AwesomeConsoleServices.md",
     "_posts/2020-08-17-Build-4node-Cluster.md",
     "_includes/svg/github.svg",
-    "LICENSE.md",
-    "test.md",
-    "_posts/2021-05-21-ManagedServiceAccounts.md"
+    "LICENSE.md"
   ]
 }
