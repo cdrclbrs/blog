@@ -1,8 +1,7 @@
 ---
 layout: post
-title: "Active Directory Kill Chain Attack & Defense"
-excerpt: "Active Directory Kill Chain Attack & Defense 
-![AD Attacks](https://imgr.search.brave.com/K6cCZJqmmrLpRLD7_FE7g-iKkJvx3V173mElU_EKxNs/fit/555/203/ce/1/aHR0cHM6Ly9ibG9n/LmFwbmljLm5ldC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOS8x/MC9BY3RpdmVEaXJl/Y3RvcnlfYXR0YWNr/X2Jhbm5lci5wbmc_/dj1lODg0NWY5NTZi/M2U0ODNlYTJjOTZj/ZTkxMDA0YmY4ZQ)"<!--read-->"
+title: "AD Kill Chain Attack and Defense"
+excerpt: "Active Directory Kill Chain"<!--read-->"
 categories:
   - Security
 tags:
