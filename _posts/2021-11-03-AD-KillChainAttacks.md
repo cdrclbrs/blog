@@ -1,7 +1,8 @@
 ---
 layout: post
 title: "Active Directory Kill Chain Attack & Defense"
-excerpt: "Active Directory Kill Chain Attack & Defense "<!--read-->"
+excerpt: "Active Directory Kill Chain Attack & Defense 
+![AD Attacks](https://imgr.search.brave.com/K6cCZJqmmrLpRLD7_FE7g-iKkJvx3V173mElU_EKxNs/fit/555/203/ce/1/aHR0cHM6Ly9ibG9n/LmFwbmljLm5ldC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOS8x/MC9BY3RpdmVEaXJl/Y3RvcnlfYXR0YWNr/X2Jhbm5lci5wbmc_/dj1lODg0NWY5NTZi/M2U0ODNlYTJjOTZj/ZTkxMDA0YmY4ZQ)"<!--read-->"
 categories:
   - Security
 tags:
@@ -12,7 +13,7 @@ last_modified_at: 2021-11-03T03:22:48-05:00
 ---
 
 # Active Directory Kill Chain Attack & Defense
-![AD Attacks](https://imgr.search.brave.com/K6cCZJqmmrLpRLD7_FE7g-iKkJvx3V173mElU_EKxNs/fit/555/203/ce/1/aHR0cHM6Ly9ibG9n/LmFwbmljLm5ldC93/cC1jb250ZW50L3Vw/bG9hZHMvMjAxOS8x/MC9BY3RpdmVEaXJl/Y3RvcnlfYXR0YWNr/X2Jhbm5lci5wbmc_/dj1lODg0NWY5NTZi/M2U0ODNlYTJjOTZj/ZTkxMDA0YmY4ZQ)
+
 <img width="650" src="https://camo.githubusercontent.com/9547d8152e3490a6e5e3da0279faab64340885be/68747470733a2f2f646f63732e6d6963726f736f66742e636f6d2f656e2d75732f616476616e6365642d7468726561742d616e616c79746963732f6d656469612f61747461636b2d6b696c6c2d636861696e2d736d616c6c2e6a7067">
 
 
