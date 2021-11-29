@@ -2,7 +2,7 @@
 layout: post
 sidebar_link: true
 title: "Secure your passwords with KeepassXC"
-excerpt: "KeyPass and Yubikey operations"
+excerpt: "Learn who to secure your passwords why High Security Model - KeyFile plus Hardware Security Key."
 excerpt_separator: "<!--more-->"
 categories:
   - security
@@ -18,9 +18,10 @@ I'll write about keePassXC, which is a fork of Keepass.
 Both solutions are *free* (*Bitwarden offers paid plans*) and OpenSource, which means that the community has the right to look at and improve the source code, which is very important.
 The difference is that Bitwarden stores your passwords in the cloud, where Keepass only allows you to store them locally or on a "Synchronized" repository. This is where it's very interesting because you can access your password database from anywhere freely (via a trusted CSP ( like protondrive) or a private cloud like NextCloud etc...
 
-Of course both solution do provide Browser Support with specific add-ins. However, i prefer avoiding browser autofill that represent a risk.
+Of course both solution do provide Browser Support with specific add-ins and off course are compliant with multiple platforms.
+However, i prefer avoiding browser autofill that represent a risk...(Do you like CSRF? :-)..
 
-The other feature i like with KeePassXC is the ability to protect the integrity and the confidentiality of the wallet with interesting methods:
+The other feature i like with **KeePassXC** is the ability to protect the integrity and the confidentiality of the wallet with interesting methods:
 - The usage if a KeyFile
 - The usage of a Challeng-Response With a HardWare Key (Like Yubikey)
 
