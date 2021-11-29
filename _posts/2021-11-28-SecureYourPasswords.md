@@ -9,7 +9,7 @@ categories:
 tags:
   - Security
   - Passwords
-last_modified_at: 2020-11-28T23:23:48-05:00
+last_modified_at: 2021-11-28T23:23:48-05:00
 ---
 
 ## Keypass or Bitwarden?
