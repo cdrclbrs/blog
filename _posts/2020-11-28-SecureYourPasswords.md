@@ -1,8 +1,8 @@
 ---
 layout: post
 sidebar_link: true
-title: "Secure your password with KeepassXC"
-excerpt: "Adopt the password management securely"
+title: "Secure your passwords with KeepassXC"
+excerpt: "KeyPass and Yubikey operations"
 excerpt_separator: "<!--more-->"
 categories:
   - security
