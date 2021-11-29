@@ -30,7 +30,7 @@ It doesn't matter if you have your passwords on an "ultra protected" safe with a
 ## Setuping your Keypass Database
 
 #### Find a keyfile
-![[mysecurityfile.jpg]]
+![mysecurityfile.jpg](https://blog.lbrs.io/images/mysecurityfile.jpg)
 
 #### What is a key file ?
 A key file is a file containing random bytes that can be added to your master key for additional security. 
@@ -43,22 +43,24 @@ A key file is only as secure as you keep it. It is basically a password that you
 To use a YubiKey for securing your KeePassXC database, you have to configure one of your YubiKey slots for **HMAC-SHA1** Challenge Response mode
 Download the tool at: yubico.com/pt
 
-![[YubikeyPersonalizationTool.png]]
+![YubikeyPersonalizationTool.png](https://blog.lbrs.io/images/YubikeyPersonalizationTool.png)
 
-![[YubikeyPT.png]]
+![YubikeyPT.png](https://blog.lbrs.io/images/YubikeyPT.png)
 
 Now you need to create your Database:
 Add additionnal protection with your **Key File** and **YubiKey**
-![[DbSetupKeepass.png]]
+![DbSetupKeepass.png](https://blog.lbrs.io/images/DbSetupKeepass.png)
 
 Now while starting, if you do not provide your KeyFile, but your password and your YubiKey, you're still blocked:
-![[KeePassStartupError.png]]
+![KeePassStartupError.png](https://blog.lbrs.io/images/KeePassStartupError.png)
 
 While all the infos are filled, just touch the YubiKey (this ensures that there is a physical interaction)
-![[KeePassStartupTouch.png]]
+![KeePassStartupTouch.png](https://blog.lbrs.io/images/KeePassStartupTouch.png)
 
 Now you can use your wallet of passwords:
 Everytime, you write to the database, a "touch" prompt ensures that it is expected access and requires your validation.
+
+![KeePassStarted.png](https://blog.lbrs.io/images/KeePassStarted.png)
 
 Now you're also proteced against the keyloggers and shoulder surfing attacks!
 
