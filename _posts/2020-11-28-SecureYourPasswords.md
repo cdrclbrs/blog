@@ -36,15 +36,28 @@ It doesn't matter if you have your passwords on an "ultra protected" safe with a
 A key file is a file containing random bytes that can be added to your master key for additional security. 
 If the file changes, it is as if you forgot your password and you will lose access to your database: So, for instance, a static and never-changing holiday picture is okay, your personal notes file is not. 
 
-
 #### How secure is a key file and how can I sync it to other devices?
 A key file is only as secure as you keep it. It is basically a password that you've written down. As a general rule, you should never use a key file without an actual password, because it is harder to keep your key file secret than a memorized password that only you know. However, a key file can be very strong additional protection if kept separately from the database file, such as on an external thumb drive. If you sync your database via a cloud provider (Dropbox, Google Drive, Nextcloud, …).
 
+#### Configuration of the Hardware security Key
+To use a YubiKey for securing your KeePassXC database, you have to configure one of your YubiKey slots for **HMAC-SHA1** Challenge Response mode
+Download the tool at: yubico.com/pt
+
 ![[YubikeyPersonalizationTool.png]]
 
+![[YubikeyPT.png]]
 
+Now you need to create your Database:
+Add additionnal protection with your **Key File** and **YubiKey**
+![[DbSetupKeepass.png]]
 
+Now while starting, if you do not provide your KeyFile, but your password and your YubiKey, you're still blocked:
+![[KeePassStartupError.png]]
 
+While all the infos are filled, just touch the YubiKey (this ensures that there is a physical interaction)
+![[KeePassStartupTouch.png]]
 
+Now you can use your wallet of passwords:
+Everytime, you write to the database, a "touch" prompt ensures that it is expected access and requires your validation.
 
-
+Now you're also proteced against the keyloggers and shoulder surfing attacks!
