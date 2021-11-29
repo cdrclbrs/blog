@@ -30,7 +30,7 @@ It doesn't matter if you have your passwords on an "ultra protected" safe with a
 
 ## Setuping your Keypass Database
 
-#### Find a keyfile
+#### Find a "COOL" keyfile
 ![mysecurityfile.jpg](https://blog.lbrs.io/images/mysecurityfile.jpg)
 
 #### What is a key file ?
@@ -65,7 +65,7 @@ Everytime, you write to the database, a "touch" prompt ensures that it is expect
 
 Now you're also proteced against the keyloggers and shoulder surfing attacks!
 
-> More infos on: https://keepassxc.org/docs
-> Download tools on: yubico.com/pt
-> Download KeePassXC: https://keepassxc.org/download/
+* More infos on: https://keepassxc.org/docs
+* Download tools on: yubico.com/pt
+* Download KeePassXC: https://keepassxc.org/download/
 
