@@ -61,3 +61,8 @@ Now you can use your wallet of passwords:
 Everytime, you write to the database, a "touch" prompt ensures that it is expected access and requires your validation.
 
 Now you're also proteced against the keyloggers and shoulder surfing attacks!
+
+> More infos on: https://keepassxc.org/docs
+> Download tools on: yubico.com/pt
+> Download KeePassXC: https://keepassxc.org/download/
+
