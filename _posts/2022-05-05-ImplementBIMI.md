@@ -62,13 +62,10 @@ _dmarc 300 IN TXT "v=DMARC1; p=quarantine; rua=mailto:contact@lbrs.io"
 ``` 
 
 3.  Generate the appropriate SVG image that meets the standard of tiny-PS (Portable Secure)
-```xml
+```shell
 <?xml version="1.0" encoding="utf-8"?>
-
 <!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0) -->
-
 <svg version="1.2" baseProfile="tiny-ps" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
-
 viewBox="0 0 32 32" xml:space="preserve"><title>cdrc lbrs</title>
 ```
 5.  Acquire a VMC for your logo (currently optional/not available to non-Gmail Pilot participants)
