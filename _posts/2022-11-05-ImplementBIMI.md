@@ -43,9 +43,9 @@ This time, it is not a matter of adding a technical element invisible to the use
 
 For example at Paypal, with the following request:
 
-![[dnsreconbimi.png]]
+![dnsreconbimi.png](https://blog.lbrs.io/images/dnsreconbimi.png)
 
-![[AnalyseSVG.png]]
+![AnalyseSVG.png](https://blog.lbrs.io/images/AnalyseSVG.png)
 
 A standard being finished, already being implemented here or there. It must be completed by the creation of Mark Verifying Authority (MVA) issuing certificates (VMC) to confirm that a logo can be used by a domain, like SSL certificates. Again, to avoid identity theft.
 
