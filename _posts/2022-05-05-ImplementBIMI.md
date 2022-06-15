@@ -86,6 +86,9 @@ Once you’ve implemented the required DNS configuration your logo will be evalu
 ![lbrsBIMI.png](https://blog.lbrs.io/images/lbrsBIMI.png)
 
 # Check for BIMI Compliance
+Just search for "check BIMI sites""
+Mx toolbox does the work pretty well
+https://mxtoolbox.com/bimi.aspx
 
 
 
