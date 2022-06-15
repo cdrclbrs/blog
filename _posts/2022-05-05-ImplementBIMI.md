@@ -48,7 +48,7 @@ Note that the pem file url is referenced in the Url (VMC)
 
 ![AnalyseSVG.png](https://blog.lbrs.io/images/AnalyseSVG.png)
 
-![PaypalPhone.png](https://blog.lbrs.io/images/PaypalPhone.png =400x)
+![PaypalPhone.png](https://blog.lbrs.io/images/PaypalPhone.png =100x)
 A standard being finished, already being implemented here or there. It must be completed by the creation of Mark Verifying Authority (MVA) issuing certificates (VMC) to confirm that a logo can be used by a domain, like SSL certificates. Again, to avoid identity theft.
 
 # How can i implement BIMI for my domain ?
