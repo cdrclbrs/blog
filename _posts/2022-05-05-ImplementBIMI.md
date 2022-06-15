@@ -82,6 +82,8 @@ default._bimi 300 IN TXT "v=BIMI1;l=https://lbrs.blob.core.windows.net/lbrsweb/B
 
 Once you’ve implemented the required DNS configuration your logo will be evaluated by the recipient's Mailbox provider and when it meets their specific criteria the logo will be shown to the end-user.
 
+![lbrsBIMI.png](https://blog.lbrs.io/images/lbrsBIMI.png)
+
 # Check for BIMI Compliance
 
 
