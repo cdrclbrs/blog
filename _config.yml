@@ -9,7 +9,7 @@ twitter:          leubfish
 telegram:         petitleub
 github_username:  cdrclbrs
 tagline:          "Security is always excessive until it's not enough."
-description:      'The <a href="">quieter you become</a>, the more you are able to hear'
+description:      "Security is always excessive until it's not enough."
 url:              https://blog.lbrs.io/
 #baseurl:          '/'
                   # the optional subpath of your site, e.g. "/blog"
