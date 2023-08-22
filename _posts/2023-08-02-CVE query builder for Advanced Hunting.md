@@ -68,6 +68,10 @@ python script_name.py -url <URL>
 
 ```
 
-That way you can easily get the CVE from any Webpage and build your own query on Defender
+That way you can easily get the CVE from any Webpage and build your own query on Defender:
+
+Here you quikly get an overview of amount of impacted Devices for every CVE
+
+![CVEtrackpython.png](https://blog.lbrs.io/images/CVEtrackpython.png)
 
 
