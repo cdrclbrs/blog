@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Microsoft 365 Attack Simulation"
+title: "an eye on Microsoft 365 Attack Simulation Script"
 excerpt: "Fileless PS attack with Process Injection and SMB recon"
 excerpt_separator: "<!--more-->"
 categories:
@@ -16,7 +16,6 @@ last_modified_at: 2023-07-28T11:12:23-02:00
 # Analyze the script
 
 
-
 >You can download the script for the MS defender portal of your tenant
 
 Here is the complete script:
@@ -29,7 +28,7 @@ The script converts the string 'WinATP-Intro-Injection' into a byte array using 
 It then makes a web request to the specified URL, fetches the content of the response, and stores it in the $base64String variable.
 
 
-Let's write some line to decypher it:
+Let's write some PS lines to decypher it:
 
 ```powershell
 [Net.ServicePointManager]::SecurityProtocol = [Net.SecurityProtocolType]::Tls12;
