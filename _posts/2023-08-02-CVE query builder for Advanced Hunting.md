@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "Get easily Cert FR CVEs for Advanced Tracking in Defender"
-excerpt: "Query builder for tracking Cert FR CVEs in Defender Advanced Tracking"
+title: "Get the list of CVEs from a security bulletin and build your query"
+excerpt: "Quickly obtain a ready-to-use Kusto query for Defender or Sentinel with the list of CVEs from a security bulletin of interest to you"
 excerpt_separator: "<!--more-->"
 categories:
   - security
