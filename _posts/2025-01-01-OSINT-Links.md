@@ -16,92 +16,179 @@ Cette liste de liens rassemble des ressources OSINT (Open Source Intelligence) c
 
 # Liens + explications
 
-https://www.shodan.io/  
-Moteur de recherche pour IoT (serveurs, caméras, etc.), permettant d’identifier des infos techniques (ports ouverts, services exposés).
+# Liste d’outils OSINT
 
-https://grep.app/  
-Moteur de recherche de code source indexant des dépôts publics pour trouver des mots-clés ou fonctions.
+## Shodan
+**URL :** [https://www.shodan.io/](https://www.shodan.io/)  
+**Description :** Moteur de recherche pour IoT (serveurs, caméras, etc.), permettant d’identifier des infos techniques (ports ouverts, services exposés).
 
-https://app.binaryedge.io/login  
-Plateforme de scans et de monitoring d’IP et de domaines pour détecter vulnérabilités et expositions.
+---
 
-https://onyphe.io/  
-Moteur de recherche cybersécurité agrégeant des données de multiples sources pour trouver menaces et vulnérabilités.
+## Grep App
+**URL :** [https://grep.app/](https://grep.app/)  
+**Description :** Moteur de recherche de code source indexant des dépôts publics pour trouver des mots-clés ou fonctions.
 
-https://viz.greynoise.io/  
-Visualisation du “bruit” Internet (scans, bots, etc.) afin de distinguer le trafic malveillant.
+---
 
-[https://hunter.io/](https://hunter.io/ "Cmd-clic pour ouvrir : https://hunter.io/")  
-Outil pour trouver des adresses e-mail associées à un domaine et vérifier leur validité.
+## BinaryEdge (Login)
+**URL :** [https://app.binaryedge.io/login](https://app.binaryedge.io/login)  
+**Description :** Plateforme de scans et de monitoring d’IP et de domaines pour détecter vulnérabilités et expositions.
 
-https://www.zoomeye.org/  
-Moteur de recherche similaire à Shodan pour identifier appareils et services exposés.
+---
 
-https://crt.sh/  
-Liste publique de certificats SSL/TLS permettant de rechercher domaines/sous-domaines associés.
+## Onyphe
+**URL :** [https://onyphe.io/](https://onyphe.io/)  
+**Description :** Moteur de recherche cybersécurité agrégeant des données de multiples sources pour trouver menaces et vulnérabilités.
 
-https://pulsedive.com/  
-Plateforme de Threat Intelligence avec infos sur IP, URL et domaines malveillants.
+---
 
-https://www.virustotal.com/  
-Service d’analyse multi-antivirus pour détecter malwares dans fichiers ou URL.
+## GreyNoise Viz
+**URL :** [https://viz.greynoise.io/](https://viz.greynoise.io/)  
+**Description :** Visualisation du “bruit” Internet (scans, bots, etc.) afin de distinguer le trafic malveillant.
 
-https://otx.alienvault.com/  
-Plateforme communautaire de partage d’indicateurs de compromission et d’infos sur menaces.
+---
 
-https://emailrep.io/  
-Outil pour évaluer la réputation d’une adresse email (fuites, spam, etc.).
+## Hunter.io
+**URL :** [https://hunter.io/](https://hunter.io/)  
+**Description :** Outil pour trouver des adresses e-mail associées à un domaine et vérifier leur validité.
 
-https://www.abuseipdb.com/  
-Base de données collaborative d’IP signalées pour activité malveillante.
+---
 
-https://www.hybrid-analysis.com/  
-Sandbox en ligne pour analyser le comportement de fichiers/URLs suspects.
+## ZoomEye
+**URL :** [https://www.zoomeye.org/](https://www.zoomeye.org/)  
+**Description :** Moteur de recherche similaire à Shodan pour identifier appareils et services exposés.
 
-https://any.run/  
-Sandbox interactive permettant d’observer en direct le comportement d’un fichier suspect.
+---
 
-https://gchq.github.io/CyberChef/  
-Outil multifonction pour manipuler/transformer des données (encodage, hachage, etc.).
+## crt.sh
+**URL :** [https://crt.sh/](https://crt.sh/)  
+**Description :** Liste publique de certificats SSL/TLS permettant de rechercher domaines/sous-domaines associés.
 
-https://mxtoolbox.com/  
-Outils de diagnostic DNS, MX et blacklist pour vérifier la configuration d’un domaine.
+---
 
-https://exchange.xforce.ibmcloud.com/  
-Plateforme IBM X-Force de threat intelligence pour vulnérabilités, IP malveillantes, etc.
+## Pulsedive
+**URL :** [https://pulsedive.com/](https://pulsedive.com/)  
+**Description :** Plateforme de Threat Intelligence avec infos sur IP, URL et domaines malveillants.
 
-https://leakix.net/  
-Moteur de recherche indexant services mal configurés et données potentiellement exposées.
+---
 
-https://intelx.io/  
-Moteur de recherche OSINT couvrant fuites de données, dark web et documents sensibles.
+## VirusTotal
+**URL :** [https://www.virustotal.com/](https://www.virustotal.com/)  
+**Description :** Service d’analyse multi-antivirus pour détecter malwares dans fichiers ou URL.
 
-https://app.netlas.io/responses/  
-Outil de recherche et de cartographie Internet basé sur des scans réseau (bannières, réponses, etc.).
+---
 
-https://searchcode.com/  
-Moteur de recherche de code source dans des dépôts publics pour trouver des extraits spécifiques.
+## AlienVault OTX
+**URL :** [https://otx.alienvault.com/](https://otx.alienvault.com/)  
+**Description :** Plateforme communautaire de partage d’indicateurs de compromission et d’infos sur menaces.
 
-https://urlscan.io/  
-Analyse les ressources chargées par une URL et fournit un rapport visuel et technique.
+---
 
-https://publicwww.com/  
-Moteur de recherche scannant le code HTML public pour trouver balises ou codes de suivi.
+## EmailRep
+**URL :** [https://emailrep.io/](https://emailrep.io/)  
+**Description :** Outil pour évaluer la réputation d’une adresse email (fuites, spam, etc.).
 
-https://fullhunt.io/  
-Plateforme scannant l’infrastructure d’une organisation pour trouver vulnérabilités et actifs exposés.
+---
 
-https://binaryedge.io/  
-Service scannant et indexant Internet pour identifier expositions et vulnérabilités (similaire à Shodan).
+## AbuseIPDB
+**URL :** [https://www.abuseipdb.com/](https://www.abuseipdb.com/)  
+**Description :** Base de données collaborative d’IP signalées pour activité malveillante.
 
-https://ivre.rocks/  
-Outil open source pour visualiser et analyser les résultats de scans Nmap.
+---
 
-https://stalkphish.io/  
-Plateforme dédiée à la détection et l’analyse de campagnes de phishing (URLs, kits, etc.).
+## Hybrid Analysis
+**URL :** [https://www.hybrid-analysis.com/](https://www.hybrid-analysis.com/)  
+**Description :** Sandbox en ligne pour analyser le comportement de fichiers/URLs suspects.
 
-https://ipinfo.io/  
-Service donnant infos géographiques et techniques sur une IP (localisation, FAI, ASN).
+---
+
+## ANY.RUN
+**URL :** [https://any.run/](https://any.run/)  
+**Description :** Sandbox interactive permettant d’observer en direct le comportement d’un fichier suspect.
+
+---
+
+## CyberChef
+**URL :** [https://gchq.github.io/CyberChef/](https://gchq.github.io/CyberChef/)  
+**Description :** Outil multifonction pour manipuler/transformer des données (encodage, hachage, etc.).
+
+---
+
+## MXToolbox
+**URL :** [https://mxtoolbox.com/](https://mxtoolbox.com/)  
+**Description :** Outils de diagnostic DNS, MX et blacklist pour vérifier la configuration d’un domaine.
+
+---
+
+## IBM X-Force Exchange
+**URL :** [https://exchange.xforce.ibmcloud.com/](https://exchange.xforce.ibmcloud.com/)  
+**Description :** Plateforme IBM X-Force de threat intelligence pour vulnérabilités, IP malveillantes, etc.
+
+---
+
+## LeakIX
+**URL :** [https://leakix.net/](https://leakix.net/)  
+**Description :** Moteur de recherche indexant services mal configurés et données potentiellement exposées.
+
+---
+
+## IntelX
+**URL :** [https://intelx.io/](https://intelx.io/)  
+**Description :** Moteur de recherche OSINT couvrant fuites de données, dark web et documents sensibles.
+
+---
+
+## Netlas
+**URL :** [https://app.netlas.io/responses/](https://app.netlas.io/responses/)  
+**Description :** Outil de recherche et de cartographie Internet basé sur des scans réseau (bannières, réponses, etc.).
+
+---
+
+## searchcode
+**URL :** [https://searchcode.com/](https://searchcode.com/)  
+**Description :** Moteur de recherche de code source dans des dépôts publics pour trouver des extraits spécifiques.
+
+---
+
+## urlscan.io
+**URL :** [https://urlscan.io/](https://urlscan.io/)  
+**Description :** Analyse les ressources chargées par une URL et fournit un rapport visuel et technique.
+
+---
+
+## PublicWWW
+**URL :** [https://publicwww.com/](https://publicwww.com/)  
+**Description :** Moteur de recherche scannant le code HTML public pour trouver balises ou codes de suivi.
+
+---
+
+## FullHunt
+**URL :** [https://fullhunt.io/](https://fullhunt.io/)  
+**Description :** Plateforme scannant l’infrastructure d’une organisation pour trouver vulnérabilités et actifs exposés.
+
+---
+
+## BinaryEdge
+**URL :** [https://binaryedge.io/](https://binaryedge.io/)  
+**Description :** Service scannant et indexant Internet pour identifier expositions et vulnérabilités (similaire à Shodan).
+
+---
+
+## IVRE
+**URL :** [https://ivre.rocks/](https://ivre.rocks/)  
+**Description :** Outil open source pour visualiser et analyser les résultats de scans Nmap.
+
+---
+
+## StalkPhish
+**URL :** [https://stalkphish.io/](https://stalkphish.io/)  
+**Description :** Plateforme dédiée à la détection et l’analyse de campagnes de phishing (URLs, kits, etc.).
+
+---
+
+## ipinfo.io
+**URL :** [https://ipinfo.io/](https://ipinfo.io/)  
+**Description :** Service donnant infos géographiques et techniques sur une IP (localisation, FAI, ASN).
 
 
 # Telecharger le fichier de BookMarks deja formaté
