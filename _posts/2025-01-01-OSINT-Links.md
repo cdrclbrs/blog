@@ -14,9 +14,7 @@ last_modified_at: 2025-01-01T11:23:12-09:00
 Cette liste de liens rassemble des ressources OSINT (Open Source Intelligence) conçues pour faciliter la recherche et l’investigation en cybersécurité. Elle inclut des moteurs de recherche spécialisés (Shodan, ZoomEye, etc.), des outils d’analyse de code source (grep.app, searchcode), des plateformes de threat intelligence (VirusTotal, AlienVault OTX, Pulsedive), ainsi que des services de sandboxing, de gestion de réputation d’IP et d’e-mails, et de détection de phishing.
 
 
-# Liens + explications
-
-# Liste d’outils OSINT
+# Liens et explications
 
 ## Shodan
 **URL :** [https://www.shodan.io/](https://www.shodan.io/)  
