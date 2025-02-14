@@ -195,8 +195,7 @@ Cette liste de liens rassemble des ressources OSINT (Open Source Intelligence) c
 
 Voci un fichier de favoris prêt à l’import, l’objectif est d’offrir un accès simple et centralisé à ces outils, afin d’aider les professionnels de la sécurité, les chercheurs et toute personne intéressée par la cybersécurité à mener plus facilement des enquêtes, détecter des vulnérabilités ou suivre l’évolution des menaces.
 
-![https://Bookmarks](https://blog.lbrs.io/_posts/bookmarks.html.zip)
-![https://Zip file Html Bookmarks]([https://blog.lbrs.io/_posts/bookmarks.html.zip](https://github.com/cdrclbrs/Google-Dorks/blob/223fa708a118a6ebbd2f30b6be6752429e55723b/bookmarks.html.zip))
+[https://blog.lbrs.io/_posts/bookmarks.html.zip](https://blog.lbrs.io/_posts/bookmarks.html.zip)
 
 
 
