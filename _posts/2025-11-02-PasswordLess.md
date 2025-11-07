@@ -119,9 +119,10 @@ Pas de mot de passe, pas d’OTP, et surtout **une preuve liée au domaine**.
 Un site de phishing ne peut pas obtenir une signature valable pour le vrai site. Simple, efficace.
 
 ### FIDO 2 
-Fido2 est un ensemble de standarts de l'aliance FIDO et de W3C, il regourpe 2 composants principaux:  WetAuth, l’API côté navigateur pour créer et utiliser les identifiants publics et le protocole entre le navigateur/OS et l’authentificateur (clé matérielle ou authentificateur intégré) qui est le CTAP (Client To Authenticator Protocol).
-
-FIDO2 = WebAuthn + CTAP.
+**Fido2** est un ensemble de standarts de l'aliance **FIDO** et de **W3C**, il regourpe 2 composants principaux:  **WetAuth**, l’API côté navigateur pour créer et utiliser les identifiants publics et le protocole entre le navigateur/OS et l’authentificateur (clé matérielle ou authentificateur intégré) qui est le **CTAP (Client To Authenticator Protocol) **
+<p align="center">
+** FIDO2 = WebAuthn + CTAP **
+</p>
 
 <p align="center">
   <img src="https://blog.lbrs.io/images/fido2.jpg" alt="fido2" style="width:40%;">
@@ -142,12 +143,13 @@ Pas de mot de passe, pas d’OTP, pas de « code reçu par SMS ». C’est tres 
 
 # Passkeys et clés matérielles 
 
-Une passkey est une version simplifiée et synchronisable de l’authentification FIDO2.
+Une **passkey** est une version simplifiée et synchronisable de l’authentification **FIDO2**
+
 Votre appareil (OS ou clé) génère et stocke une paire de clés cryptographiques pour chaque site : la clé privée reste sur l’appareil, la clé publique va au serveur.
 
 Quand vous vous connectez, l’appareil signe la demande après vérification locale (empreinte, visage, PIN).
 
-Les passkeys peuvent être synchronisées via votre compte Apple, Google ou Microsoft, ce qui permet de vous reconnecter facilement sur tous vos appareils sans jamais manipuler de mot de passe
+Les **passkeys** peuvent être synchronisées via votre compte Apple, Google ou Microsoft, ce qui permet de vous reconnecter facilement sur tous vos appareils sans jamais manipuler de mot de passe
 
 ### YubiKey et autres clés « roaming »
 
@@ -156,15 +158,18 @@ Les passkeys peuvent être synchronisées via votre compte Apple, Google ou Micr
 </p>
 
 
-Les clés matérielles USB/NFC gardent la clé privée hors cloud, donc sur votre clef physique
+Les clés matérielles *USB/NFC* gardent la clé privée hors cloud, donc sur votre clef physique
 Idéales pour les comptes sensibles et les administrateurs.
-L’usage est simple (on touche la clé, on entre un PIN local si requis), mais il faut gérer l’inventaire, prévoir les pertes et fournir deux clés par personne critique. Ce n’est pas glamour, mais ça sécurise proprement. Le fait de toucher physiquement la clef garanti qu'une automatisation ne pourra pas "utiliser"la clef privée de votre clef physique.
+L’usage est simple (on touche la clé, on entre un PIN local si requis), mais il faut gérer l’inventaire, prévoir les pertes et fournir deux clés par personne.
+
+Ce n’est pas glamour, mais ça sécurise proprement. Le fait de toucher physiquement la clef garanti qu'une automatisation ne pourra pas "utiliser" la clef privée de votre clef physique.
 
 ## Le passwordless
 
-**Passwordless** signifie : authentifier un utilisateur sans secret mémorisé côté humain.
-La référence robuste, c’est FIDO2/WebAuthn : preuve cryptographique, liée au domaine, avec vérification locale.
-lorsque vous cliquez « Se connecter avec une passkey », vous validez avec votre empreinte ou votre visage, votre appareil signe le challenge (du bon domaine), et c’est réglé.
+**Passwordless** signifie : *authentifier un utilisateur sans secret mémorisé côté humain*
+La référence robuste, c’est **FIDO2/WebAuthn** : preuve cryptographique, liée au domaine, avec vérification locale.
+
+Lorsque vous cliquez « Se connecter avec une passkey », vous validez avec votre empreinte ou votre visage, votre appareil signe le challenge (du bon domaine), et c’est réglé.
 
 ### Concrêtement, cela apporte quoi par rapport au simple password+MFA ?
 
@@ -186,5 +191,10 @@ Côté produit, il faut activer WebAuthn, travailler sur l’enrôlement et pré
 # En synthèse
 
 Le passwordless n’est pas un gadget UX. 
-C’est une réduction massive du risque : plus de mot de passe à voler, des preuves non rejouables, liées au domaine. 
+C’est une réduction massive du risque : plus de mot de passe à voler, des preuves cryptographiques non rejouables, liées au domaine. 
 Et le bonus non négligeable : moins de tickets Jira « Maman, j’ai perdu mon mot de passe »
+
+
+<p align="center">
+  <img src="https://blog.lbrs.io/images/passless.jpg" alt="passless" style="width:70%;">
+</p>
