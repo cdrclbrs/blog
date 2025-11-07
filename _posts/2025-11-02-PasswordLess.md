@@ -8,7 +8,7 @@ categories:
 tags:
   - passwordless
   - mfa
-last_modified_at: 2025-11-08T23:22:12-11:00
+last_modified_at: 2025-11-02T02:29:12-11:00
 ---
 
 # Bien comprendre la mécanique d’une authentification par mot de passe
@@ -31,9 +31,9 @@ Les bonnes pratiques aident (mots de passe longs, dérivations lentes, sel syst�
   <img src="https://blog.lbrs.io/images/MFAwouldbegreat.jpg" alt="mfa would be great" style="width:60%;">
 </p>
 
-# Ajouter une ceinture au pantalon : le MFA
+# Ceinture et bretelles : le MFA
 
-Le Multi-Factor Authentication consiste à prouver son identité avec au moins deux catégories différentes : ce que l’on **sait** (mot de passe, PIN), ce que l’on **a** (téléphone, clé physique), ce que l’on **est** (biométrie). L’idée est simple : si un facteur tombe, l’attaquant n’a pas gagné pour autant.
+Le Multi-Factor Authentication consiste à prouver son identité avec au moins deux catégories différentes parmis 3 groupes : ce que l’on **sait** (mot de passe, PIN), ce que l’on **a** (téléphone, clé physique), ce que l’on **est** (biométrie). L’idée est simple : si un facteur tombe, l’attaquant n’a pas gagné pour autant. Le principe de multi - couches
 
 En pratique : mot de passe + code OTP, ou mot de passe + notification “push”, ou encore biométrie + clé matérielle.
 comment ca fonctionne : On entre le mot de passe, puis défi MFA, puis validation, puis émission d’une session.
