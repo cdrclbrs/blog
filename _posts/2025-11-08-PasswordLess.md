@@ -19,7 +19,7 @@ Le serveur, lui, ne garde pas votre secret en clair. Il stocke un hash du mot de
 Les bons systèmes ajoutent du rate limiting, du captcha et des verrous progressifs pour freiner les robots. Ou protègent leurs pages d'authen avec des waf comme Cloudflare.
 
 <p align="center">
-  <img src="https://blog.lbrs.io/images/weak.jpg" alt="weak" style="width:60%;">
+  <img src="https://blog.lbrs.io/images/weak.jpg" alt="weak" style="width:30%;">
 </p>
 
 Le problème, c’est que tout repose sur un secret mémorisé.
@@ -28,7 +28,7 @@ Et quand une base de hachés fuite, c'est a dire toutes les semaines, des attaqu
 Les bonnes pratiques aident (mots de passe longs, dérivations lentes, sel systématique), mais ça ne supprime pas les faiblesses structurelles. D’où la généralisation du fameux MFA.
 
 <p align="center">
-  <img src="https://blog.lbrs.io/images/MFAwouldbegreat.jpg" alt="mfa would be great" style="width:80%;">
+  <img src="https://blog.lbrs.io/images/MFAwouldbegreat.jpg" alt="mfa would be great" style="width:60%;">
 </p>
 
 # Ajouter une ceinture au pantalon : le MFA
@@ -115,7 +115,7 @@ Fido2 est un ensemble de standarts de l'aliance FIDO et de W3C, il regourpe 2 co
 FIDO2 = WebAuthn + CTAP.
 
 <p align="center">
-  <img src="https://blog.lbrs.io/images/fido2.jpg" alt="fido2" style="width:60%;">
+  <img src="https://blog.lbrs.io/images/fido2.jpg" alt="fido2" style="width:40%;">
 </p>
 
 
@@ -165,7 +165,7 @@ Les passkeys synchronisées demandent des politiques solides de récupération d
 Les clés matérielles impliquent de la logistique et une gouvernance claire.
 Côté produit, il faut activer WebAuthn, travailler sur l’enrôlement et prévoir des chemins de secours. 
 <p align="center">
-  <img src="https://blog.lbrs.io/images/fpasskey.jpg" alt="PassKeyArg" style="width:60%;">
+  <img src="https://blog.lbrs.io/images/fpasskey.jpg" alt="PassKeyArg" style="width:40%;">
 </p>
 
 
