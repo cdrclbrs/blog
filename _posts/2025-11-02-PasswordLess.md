@@ -14,17 +14,18 @@ last_modified_at: 2025-11-02T02:29:12-11:00
 # Bien comprendre la mécanique d’une authentification par mot de passe
 
 Quand vous vous connectez, vous fournissez un identifiant et un mot de passe. Rien de neuf , tout le monde connait deja le célèbre « admin/1234 »… 
-Le serveur, lui, ne garde pas votre secret en clair. Il stocke un hash du mot de passe, calculé via une fonction de dérivation type bcrypt, scrypt ou Argon2, et surtout avec un sel unique par utilisateur.
-À la connexion, il refait le calcul et compare les hash: Si ça matche, c’est ouvert.
-Les bons systèmes ajoutent du rate limiting, du captcha et des verrous progressifs pour freiner les robots. Ou protègent leurs pages d'authen avec des waf comme Cloudflare.
+Le serveur, lui, ne garde pas votre secret en clair. Il stocke un hash du mot de passe, calculé via une fonction de dérivation type bcrypt, scrypt etc, et surtout avec un sel (salt)
+À la connexion, il refait le calcul et compare les hash: Si ça matche, la connexion est authorisée.
+Les bons systèmes ajoutent du rate limiting, du captcha et des verrous progressifs pour freiner les robots. 
+Il est aussi possible de protèger les pages d'authen avec des WAP comme Cloudflare.
 
 <p align="center">
   <img src="https://blog.lbrs.io/images/weak.jpg" alt="weak" style="width:30%;">
 </p>
 
 Le problème, c’est que tout repose sur un secret mémorisé.
-Donc c’est sensible au phishing (vous tapez votre mot de passe sur un faux site), au bruteforce et au credential stuffing.
-Et quand une base de hachés fuite, c'est a dire toutes les semaines, des attaquants peuvent tenter des attaques hors-ligne.
+Donc c’est sensible au phishing (faux site), au bruteforce et au credential stuffing.
+Et quand une base de passwords fuite, (c'est a dire toutes les semaines🤡), des attaquants peuvent tenter des attaques hors-ligne.
 Les bonnes pratiques aident (mots de passe longs, dérivations lentes, sel systématique), mais ça ne supprime pas les faiblesses structurelles. D’où la généralisation du fameux MFA.
 
 <p align="center">
@@ -33,7 +34,7 @@ Les bonnes pratiques aident (mots de passe longs, dérivations lentes, sel syst�
 
 # Ceinture et bretelles : le MFA
 
-Le Multi-Factor Authentication consiste à prouver son identité avec au moins deux catégories différentes parmis 3 groupes : ce que l’on **sait** (mot de passe, PIN), ce que l’on **a** (téléphone, clé physique), ce que l’on **est** (biométrie). L’idée est simple : si un facteur tombe, l’attaquant n’a pas gagné pour autant. Le principe de multi - couches
+Le Multi-Factor Authentication consiste à prouver son identité avec au moins deux catégories différentes parmis 3 groupes : ce que l’on **sait** (mot de passe, PIN), ce que l’on **a** (téléphone, clé physique), ce que l’on **est** (biométrie). L’idée est simple : si un facteur tombe, l’attaquant n’a pas gagné pour autant. Le principe de multi - couches.
 
 En pratique : mot de passe + code OTP, ou mot de passe + notification “push”, ou encore biométrie + clé matérielle.
 comment ca fonctionne : On entre le mot de passe, puis défi MFA, puis validation, puis émission d’une session.
@@ -46,7 +47,11 @@ comment ca fonctionne : On entre le mot de passe, puis défi MFA, puis validatio
 On dort un peu mieux, mais pas totalement : 
 un OTP peut être volé en temps réel via un proxy de phishing type **EvilGinx**, un SMS peut être détourné (SIM-swap), et les « push » peuvent être approuvés par fatigue. 
 
-Moralité : mieux que rien, souvent indispensable, mais pas à l’épreuve de tout. hey oui, et beaucoup trop de gens pensent le contraire....
+Moralité : mieux que rien, souvent indispensable, mais pas à l’épreuve de tout. hey oui, et beaucoup trop de gens pensent le contraire....et se pensent souvent hors d'atteinte avec le MFA: mauvaise idée. Il existe des tas de manières de contourner cela.
+
+<p align="center">
+  <img src="https://blog.lbrs.io/images/mfafails.jpg" alt="mfa failst" style="width:60%;">
+</p>
 
 
 ## Ce qui se passe après le login : sessions et jetons
