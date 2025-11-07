@@ -169,14 +169,15 @@ Ce n’est pas glamour, mais ça sécurise proprement. Le fait de toucher physiq
 **Passwordless** signifie : *authentifier un utilisateur sans secret mémorisé côté humain*
 La référence robuste, c’est **FIDO2/WebAuthn** : preuve cryptographique, liée au domaine, avec vérification locale.
 
-Lorsque vous cliquez « Se connecter avec une passkey », vous validez avec votre empreinte ou votre visage, votre appareil signe le challenge (du bon domaine), et c’est réglé.
+Lorsque vous cliquez « *Se connecter avec une passkey* », vous validez avec votre empreinte ou votre visage, votre appareil signe le challenge (du bon domaine) et la connection est faite.
 
 ### Concrêtement, cela apporte quoi par rapport au simple password+MFA ?
 
-Résistance au phishing par conception.
-Plus de base de mots de passe à protéger.
-Moins de friction : pas de code à recopier, moins de resets.
-Standard ouvert bien supporté, pilotable côté IAM (politiques , audit).
+La vraie force c'est la résistance au phishing by Design!
+Plus de base de mots de passe à protéger
+Moins de friction : pas de code à recopier, moins de resets
+
+*Standard ouvert* bien supporté, pilotable côté IAM (politiques , audit etc..).
 
 ### Les points d’attention 
 
