@@ -8,7 +8,7 @@ categories:
 tags:
   - passwordless
   - mfa
-last_modified_at: 2025-11-07T23:22:12-11:00
+last_modified_at: 2025-11-08T23:22:12-11:00
 ---
 
 # Bien comprendre la mécanique d’une authentification par mot de passe
