@@ -37,7 +37,7 @@ Les bonnes pratiques aident (mots de passe longs, dérivations lentes, sel syst�
 Le Multi-Factor Authentication consiste à prouver son identité avec au moins deux catégories différentes parmis 3 groupes : ce que l’on **sait** (mot de passe, PIN), ce que l’on **a** (téléphone, clé physique), ce que l’on **est** (biométrie). L’idée est simple : si un facteur tombe, l’attaquant n’a pas gagné pour autant. Le principe de multi - couches.
 
 En pratique : mot de passe + code OTP, ou mot de passe + notification “push”, ou encore biométrie + clé matérielle.
-comment ca fonctionne : On entre le mot de passe, puis défi MFA, puis validation, puis émission d’une session.
+comment ca fonctionne : On entre le mot de passe, puis défi MFA, puis validation, puis émission d’une session
 
 <p align="center">
   <img src="https://blog.lbrs.io/images/leMFA.png" alt="mfa would be great" style="width:60%;">
