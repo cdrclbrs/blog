@@ -40,7 +40,7 @@ En pratique : mot de passe + code OTP, ou mot de passe + notification “push”
 comment ca fonctionne : On entre le mot de passe, puis défi MFA, puis validation, puis émission d’une session
 
 <p align="center">
-  <img src="https://blog.lbrs.io/images/leMFA.png" alt="mfa would be great" style="width:60%;">
+  <img src="https://blog.lbrs.io/images/leMFA.png" alt="mfa types" style="width:90%;">
 </p>
 
 
